@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>А. В. Суворов — отрывки из фильма и описание боёв</title>
+<style>
+  :root{
+    --dark:#14100c;
+    --paper:#f3e9d2;
+    --gold:#c9a227;
+    --red:#8b1a1a;
+    --ink:#2b2115;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:Georgia,'Times New Roman',serif;
+    background:var(--dark);
+    color:var(--paper);
+    line-height:1.6;
+  }
+  header{
+    text-align:center;
+    padding:60px 20px 40px;
+    background:linear-gradient(180deg,#1e1710 0%,#14100c 100%);
+    border-bottom:3px solid var(--gold);
+  }
+  header h1{
+    font-size:2.6rem;
+    letter-spacing:2px;
+    color:var(--gold);
+    text-transform:uppercase;
+  }
+  header p.sub{
+    margin-top:12px;
+    font-style:italic;
+    color:#d8c9a3;
+    font-size:1.1rem;
+  }
+  nav{
+    position:sticky;top:0;
+    background:#1e1710ee;
+    border-bottom:1px solid var(--gold);
+    display:flex;justify-content:center;gap:28px;
+    padding:12px 10px;flex-wrap:wrap;z-index:10;
+  }
+  nav a{color:var(--paper);text-decoration:none;font-size:.95rem;letter-spacing:1px}
+  nav a:hover{color:var(--gold)}
+  main{max-width:980px;margin:0 auto;padding:20px}
+  section{margin:60px 0}
+  h2{
+    color:var(--gold);
+    font-size:1.8rem;
+    border-bottom:2px solid var(--red);
+    padding-bottom:8px;
+    margin-bottom:24px;
+    letter-spacing:1px;
+  }
+  /* "Плёночные" карточки с отрывками */
+  .clip{
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:8px;
+    overflow:hidden;
+    margin-bottom:30px;
+    box-shadow:0 6px 18px rgba(0,0,0,.5);
+  }
+  .clip-head{
+    background:var(--red);
+    color:var(--paper);
+    padding:12px 20px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;
+  }
+  .clip-head .num{font-size:.85rem;opacity:.85;letter-spacing:2px}
+  .clip-body{padding:22px 26px}
+  .clip-body h3{margin-bottom:10px;color:var(--red);font-size:1.25rem}
+  blockquote{
+    border-left:4px solid var(--gold);
+    margin:14px 0;
+    padding:8px 18px;
+    font-style:italic;
+    background:#eadfc4;
+    color:#4a3a22;
+  }
+  .battle-card{
+    background:#1e1710;
+    border:1px solid #3a2d1c;
+    border-left:6px solid var(--gold);
+    border-radius:8px;
+    padding:24px 28px;
+    margin-bottom:28px;
+  }
+  .battle-card h3{color:var(--gold);font-size:1.35rem;margin-bottom:4px}
+  .battle-meta{font-size:.9rem;color:#b8a878;margin-bottom:12px;letter-spacing:1px}
+  .battle-card p{margin-bottom:10px;color:#e8ddc4}
+  ul.result{list-style:none;margin-top:10px}
+  ul.result li{padding-left:26px;position:relative;margin-bottom:6px;color:#e8ddc4}
+  ul.result li::before{content:"★";position:absolute;left:0;color:var(--gold)}
+  .frame-strip{
+    height:14px;
+    background:repeating-linear-gradient(90deg,#14100c 0 14px,var(--paper) 14px 28px);
+    opacity:.35;
+  }
+  footer{
+    text-align:center;
+    padding:40px 20px;
+    border-top:3px solid var(--gold);
+    color:#a89468;
+    font-style:italic;
+    margin-top:60px;
+  }
+  @media(max-width:600px){header h1{font-size:1.7rem}.battle-card{padding:18px}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Суворов</h1>
+  <p class="sub">Отрывки из художественного фильма (киностудия «Мосфильм», 1938—1939, реж. М. Чауэли и В. Петров) и описание основных сражений великого полководца</p>
+</header>
+
+<nav>
+  <a href="#about-film">О фильме</a>
+  <a href="#clips">Отрывки</a>
+  <a href="#battles">Основные бои</a>
+  <a href="#quotes">Слова Суворова</a>
+</nav>
+
+<main>
+
+<section id="about-film">
+  <h2>О фильме</h2>
+  <p style="color:#e8ddc4">
+    Двухсерийный фильм «Суворов» (1938, режиссёры Михаил Чауэли и Василий Петров, главная роль — Иван Переверзев) рассказывает о последних годах жизни генералиссимуса А. В. Суворова: опале при Павле I, ссылке в Кончанское и легендарном Итальянском и Швейцарском походах 1799 года. Ниже — тематические отрывки-сцены из фильма и краткое описание главных сражений полководца.
+  </p>
+</section>
+
+<section id="clips">
+  <h2>Отрывки из фильма</h2>
+
+  <div class="clip">
+    <div class="frame-strip"></div>
+    <div class="clip-head"><b>Отрывок 1. Ссылка в Кончанское</b><span class="num">СЕРИЯ I · 1797</span></div>
+    <div class="clip-body">
+      <h3>«Не нуждался я ни в чинах, ни в богатстве…»</h3>
+      <p>Император Павел I отстраняет Суворова от службы. Старый солдат уезжает в деревню, где рубит дрова, ходит с посохом и учит крестьянских детей. Даже в ссылке он тренируется на самодельной модели крепости и не перестаёт говорить о войне.</p>
+      <blockquote>— Помилуй бог, ваше высокопревосходительство, забыли вас!</blockquote>
+      <blockquote>— Забыли? Нет, брат… меня забыть нельзя. Я не забыл ничего.</blockquote>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="frame-strip"></div>
+    <div class="clip-head"><b>Отрывок 2. Возвращение: «Еду!»</b><span class="num">СЕРИЯ I · 1799</span></div>
+    <div class="clip-body">
+      <h3>Письмо из ставки</h3>
+      <p>Когда Франция угрожает союзникам, 69-летний Суворов получает вызов. Он собирает походную сумку и отправляет императору знаменитую депешу из трёх слов. Солдаты встречают любимого командира криком «Ура!».</p>
+      <blockquote>— Что писать государю?</blockquote>
+      <blockquote>— Пиши: «Еду».</blockquote>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="frame-strip"></div>
+    <div class="clip-head"><b>Отрывок 3. Адданский бой и переход через Альпы</b><span class="num">СЕРИЯ II · 1799</span></div>
+    <div class="clip-body">
+      <h3>«Тяжело в учении — легко в бою!»</h3>
+      <p>Русские войска разгромляют французов при Адде, а затем начинают фантастический переход через Альпы через перевал Сен-Готард. Горные тропы, обрывы, голод и холод — но русская пехота идёт вперёд. Бой при Чертовом мосту и засады в ущелье Шёлленене показаны как один из самых драматичных эпизодов фильма.</p>
+      <blockquote>— Ребята, не ровён час: впереди неприятель, позади — пропасть, выбор невелик: бей врага!</blockquote>
+    </div>
+  </div>
+
+  <div class="clip">
+    <div class="frame-strip"></div>
+    <div class="clip-head"><b>Отрывок 4. Последний день в Кончанском</b><span class="num">СЕРИЯ II · 1800</span></div>
+    <div class="clip-body">
+      <h3>«Всем смертна жизнь…»</h3>
+      <p>Вернувшийся из похода больной Суворов снова в опале. В финале фильма — его последние часы: солдаты выносят гроб, и над дорогой звучит «Ура!», которому он учил всю жизнь.</p>
+      <blockquote>— Суворов умер — слава ему!.. Храните армию в порядке: штык — врагу, солдат — пример.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="battles">
+  <h2>Основные бои и сражения</h2>
+
+  <div class="battle-card">
+    <h3>Битва при Ларге</h3>
+    <div class="battle-meta">24 августа 1770 · Русско-турецкая война 1768—1774</div>
+    <p>Первая крупная победа Суворова. Обходя многократно превосходящий турецкий лагерь кавалерией под огнём, он обратил противника в бегство. Суворов получил орден св. Георгия 3-й степени.</p>
+    <ul class="result">
+      <li>Разгром 40-тысячного турецкого лагеря малыми силами</li>
+      <li>Потери турок — свыше 2 тыс.; русских — около 130</li>
+    </ul>
+  </div>
+
+  <div class="battle-card">
+    <h3>Штурм крепости Очаков</h3>
+    <div class="battle-meta">17—18 июня 1788 · Русско-турецкая война 1787—1791</div>
+    <p>Суворов командовал штурмом сильно укреплённой турецкой крепости. Несмотря на ранение, он повёл колонны вперёд. Очаков был взят за одну ночь.</p>
+    <ul class="result">
+      <li>Крепость взята штурмом, гарнизон почти уничтожен</li>
+      <li>Пример стремительного наступательного штурма</li>
+    </ul>
+  </div>
+
+  <div class="battle-card">
+    <h3>Битва при Фокшанах</h3>
+    <div class="battle-meta">21 июля 1789 · Русско-турецкая война 1787—1791</div>
+    <p>Соединившись с австрийскими войсками принца Кобургского, Суворов внезапной ночной атакой разбил 20-тысячный турецкий корпус.</p>
+    <ul class="result">
+      <li>Потери турок — до 10 тыс., потеряны обоз и артиллерия</li>
+      <li>Открыт путь на Молдавию и Валахию</li>
+    </ul>
+  </div>
+
+  <div class="battle-card">
+    <h3>Штурм крепости Измаил</h3>
+    <div class="battle-meta">11 декабря 1790 · Русско-турецкая война 1787—1791</div>
+    <p>Неприступная, по мнению современников, крепость на Дунае. Суворов готовил штурм две недели, построив копии стен, и взял Измаил за один день. «Крепость взята, русское знамя на стенах Измаила!»</p>
+    <ul class="result">
+      <li>Гарнизон (35 тыс.) разбит; взято более 265 орудий</li>
+      <li>Завершило войну блестящей победой, привело к Ясскому миру</li>
+    </ul>
+  </div>
+
+  <div class="battle-card">
+    <h3>Сражение при Треббии</h3>
+    <div class="battle-meta">29—31 мая / 6—8 июня 1799 · Итальянский поход</div>
+    <p>На реке Треббия в Пьемонте Суворов с ~18 тыс. солдат атаковал 32-тысячную французскую армию Макдональда. Трёхдневный бой закончился полным разгромом французов.</p>
+    <ul class="result">
+      <li>Потери французов — до 16 тыс. убитыми, ранеными и пленными</li>
+      <li>Освобождена Северная Италия, крах французского господства в регионе</li>
+    </ul>
+  </div>
+
+  <div class="battle-card">
+    <h3>Бой при Нови</h3>
+    <div class="battle-meta">4 (15) августа 1799 · Итальянский поход</div>
+    <p>Последняя битва Итальянского похода. Армия Суворова разбила французскую армию Жубера (сам Жубер погиб). Победа закрепила господство союзников в Италии.</p>
+    <ul class="result">
+      <li>Французы потеряли до 10 тыс. человек и всю артиллерию</li>
+      <li>А. В. Суворов произведён в генералиссимусы</li>
+    </ul>
+  </div>
+
+  <div class="battle-card">
+    <h3>Переход через Альпы (Сен-Готард, Чёртов мост, Музоталь)</h3>
+    <div class="battle-meta">Сентябрь 1799 · Швейцарский поход</div>
+    <p>Выход из окружения после предательства австрийцев. Корпус Римона-Корсакова блокировал долину Роны, горные пути заняты французами. Русские прошли через перевал Росберг, взяли штурмом Чёртов мост и вышли из котла через долину Рейсы.</p>
+    <ul class="result">
+      <li>Армия сохранила боеспособность вопреки окружению</li>
+      <li>Подвиг, вошедший в мировую историю военного искусства</li>
+    </ul>
+  </div>
+
+  <div class="battle-card">
+    <h3>Битва при Цюрихе</h3>
+    <div class="battle-meta">16 (27) сентября 1799 · Швейцарский поход</div>
+    <p>Последнее сражение Суворова. В ходе выхода из окружения русские войска отбили атаки корпуса Массена у Цюриха. После боя Суворов повёл армию через Панекс и Рейн в Австрию.</p>
+    <ul class="result">
+      <li>Несмотря на тяжёлые условия, армия вышла организованно</li>
+      <li>Завершение Швейцарского похода — отход в Австрию</li>
+    </ul>
+  </div>
+</section>
+
+<section id="quotes">
+  <h2>Слова Суворова, прозвучавшие в фильме</h2>
+  <blockquote>«Тяжело в учении — легко в бою; тяжело в бою — легко в учении».</blockquote>
+  <blockquote>«Пуля — дура, штык — молодец».</blockquote>
+  <blockquote>«Проектируй кампанию, но помни: гений — плод труда и науки».</blockquote>
+  <blockquote>«Моя фамилия — Солдат, мой чин — Генерал, моя должность — Маршал; служил я России тридцать лет».</blockquote>
+  <blockquote>«Кольцо замкнулось, но мы прорвём его штыками!» (о выходе из окружения в Швейцарии)</blockquote>
+</section>
+
+</main>
+
+<footer>
+  «Для России жил — и для России умру». &nbsp;·&nbsp; Страница посвящена фильму «Суворов» (1938—1939) и его исторической основе.
+</footer>
+
+</body>
+</html>
